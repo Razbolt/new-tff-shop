@@ -88,6 +88,12 @@ export const list = async(req,res) =>
     }
 };
 
+/** This function read the products from the databases
+ * @param {req} request - request from the inputs that slug of the products 
+ * @param {res} response - response that taken from request 
+ * @returns  {product} return the products that founded that asked from the request parameters in slug withtout taken photos and populate category
+ *  
+ * */
 
 export const read = async(req,res) => 
 {

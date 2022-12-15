@@ -7,7 +7,16 @@ dotenv.config();
 
 // trying
 
-//fonksiyonlar var
+/**
+ * this function register the user with asynchronize function that takes request and respond as input 
+ * @param {req} request - takes the request from the input in typed as input
+ * @param {res} response - shoe the response from that taken input in request
+ * After taking request as input , use desctuctor to take input in request body and asign them corresponding values
+ * Second line check that if they are empty or not before we acces to database,
+ * After this step hash the password  and register to use with .save() function
+ * and then send response as json file
+ * @returns User registiration
+ */
 
 export const register = async (req,res) =>
 {
