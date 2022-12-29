@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import {useAuth} from "../../context/auth";
 import { useNavigate } from "react-router-dom";
+import Search from "../forms/Search";
 
 export default function Menu () 
 {
@@ -24,6 +25,8 @@ export default function Menu ()
         <li className="nav-item">
             <NavLink className="nav-link " aria-current="page" to="/shop">Shop</NavLink>
         </li>
+
+        <Search/>
 
         
                 {/* condition ? true : false*/}

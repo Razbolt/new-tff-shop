@@ -6,7 +6,7 @@ const router = express.Router()
 import { requireSignin, isAdmin} from "../middlewares/auth.js";
 
 //controller
-import {create,list,read,photo,remove,update,filteredProducts} from "../controllers/products.js";
+import {create,list,read,photo,remove,update,filteredProducts,productsCount,listProducts,productsSearch} from "../controllers/products.js";
 
 
 router.post('/product',requireSignin,isAdmin,formidable(),create);
@@ -17,6 +17,9 @@ router.get("/product/photo/:productId",photo);
 router.delete("/product/:productId",requireSignin,isAdmin,remove);
 router.put("/product/:productId", requireSignin, isAdmin, formidable(), update);
 router.post("/filtered-products", filteredProducts);
+router.get('/products-count',productsCount);
+router.get('/list-products/:page',listProducts);
+router.get('/products/search/:keyword',productsSearch);
 
 //try also 2
 
