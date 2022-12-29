@@ -1,7 +1,7 @@
 export default function Jumbotron({title,subtitle}) 
 {
     return (
-    <div className="container-fluid jumbotron">
+    <div className="container-fluid jumbotron" style = {{marginTop: '-8px',height: '200px'}}>
        <div className="row">
 
         <div className="col text-center p-4 ">
