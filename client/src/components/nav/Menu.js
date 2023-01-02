@@ -2,12 +2,20 @@ import { NavLink } from "react-router-dom";
 import {useAuth} from "../../context/auth";
 import { useNavigate } from "react-router-dom";
 import Search from "../forms/Search";
+import useCategory from "../../hooks/useCategory";
 
 export default function Menu () 
 {
-    //hooks
+    //context 
     const [auth,setAuth] = useAuth();
+
+    //hooks
+    const categories = useCategory();
     const navigate = useNavigate();
+
+
+    console.log('categories in menu=>',categories);     
+
 
     const logout = () => 
     {
