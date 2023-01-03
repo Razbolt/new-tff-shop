@@ -33,4 +33,8 @@ in order to install this project first you need to instal some npm as  ``` npm i
  In helpers we have a functions which connected to routers file that help us to accces this function in database to create, delete or views things that have perform in client side and database.
  * In models, we create 3 different models for categories,products and users to connect their attributes with mongoDB, this allow us to create complex system with model documentation.
  * In middleware, we create tokens to auhentation to admin and user which they can not acces admin page even if they are try to use server side application such as POSTMAN. This middleware contains requireSigin() function to they need to be first sigin to application.
+<<<<<<< HEAD
  * In helper we have 'auth.js' which hash password that person entered in the client side so, in database password is not stored as string but they are stored as hash and we compare this hash values when they entered in client side.
+=======
+ * In helper we have 'auth.js' which hash password that person entered in the client side so, in database password is not stored as string but they are stored as hash and we compare this hash values when they entered in client side.
+>>>>>>> c6101552f76962fb4b907874c85f662cd0c6bedc
