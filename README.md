@@ -1,4 +1,7 @@
+
+## Updated from previous one with the database !
 # TFF-Shop
+
 - This project can be run in the localhost:3000 and also in 
  https://tff-ecom-client.herokuapp.com/
 
